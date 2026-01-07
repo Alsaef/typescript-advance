@@ -50,3 +50,23 @@ try {
 let data:unknown='ratul'
 
 let name:string=data as string
+
+
+
+
+
+type Role='admin'|'user' | 'super admin'
+
+function Dashboard(role:Role):void {
+if (role==='admin') {
+    console.log('redirect admin dashboard');
+    return
+}
+if (role==='user') {
+    console.log('redirect user dashboard');
+    return
+}
+
+role
+}
+

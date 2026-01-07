@@ -30,4 +30,15 @@ catch (error) {
 // force fully type data
 let data = 'ratul';
 let name = data;
+function Dashboard(role) {
+    if (role === 'admin') {
+        console.log('redirect admin dashboard');
+        return;
+    }
+    if (role === 'user') {
+        console.log('redirect user dashboard');
+        return;
+    }
+    role;
+}
 //# sourceMappingURL=moreTypes.js.map
